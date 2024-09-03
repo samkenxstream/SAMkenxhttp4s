@@ -164,7 +164,7 @@ jobs:
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
 
       - name: Download target directories (3.3.0, rootJS)
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: target-${{ matrix.os }}-${{ matrix.java }}-3.3.0-rootJS
 
@@ -174,7 +174,7 @@ jobs:
           rm targets.tar
 
       - name: Download target directories (3.3.0, rootJVM)
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: target-${{ matrix.os }}-${{ matrix.java }}-3.3.0-rootJVM
 
@@ -184,7 +184,7 @@ jobs:
           rm targets.tar
 
       - name: Download target directories (3.3.0, rootNative)
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: target-${{ matrix.os }}-${{ matrix.java }}-3.3.0-rootNative
 
@@ -194,7 +194,7 @@ jobs:
           rm targets.tar
 
       - name: Download target directories (2.12.17, rootJS)
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: target-${{ matrix.os }}-${{ matrix.java }}-2.12.17-rootJS
 
@@ -204,7 +204,7 @@ jobs:
           rm targets.tar
 
       - name: Download target directories (2.12.17, rootJVM)
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: target-${{ matrix.os }}-${{ matrix.java }}-2.12.17-rootJVM
 
@@ -214,7 +214,7 @@ jobs:
           rm targets.tar
 
       - name: Download target directories (2.12.17, rootNative)
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: target-${{ matrix.os }}-${{ matrix.java }}-2.12.17-rootNative
 
@@ -224,7 +224,7 @@ jobs:
           rm targets.tar
 
       - name: Download target directories (2.13.10, rootJS)
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: target-${{ matrix.os }}-${{ matrix.java }}-2.13.10-rootJS
 
@@ -234,7 +234,7 @@ jobs:
           rm targets.tar
 
       - name: Download target directories (2.13.10, rootJVM)
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: target-${{ matrix.os }}-${{ matrix.java }}-2.13.10-rootJVM
 
@@ -244,7 +244,7 @@ jobs:
           rm targets.tar
 
       - name: Download target directories (2.13.10, rootNative)
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: target-${{ matrix.os }}-${{ matrix.java }}-2.13.10-rootNative
 
